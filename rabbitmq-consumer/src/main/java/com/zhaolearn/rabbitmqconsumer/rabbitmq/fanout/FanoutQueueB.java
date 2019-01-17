@@ -1,4 +1,4 @@
-package com.zhaolearn.rabbitmqconsumer;
+package com.zhaolearn.rabbitmqconsumer.rabbitmq.fanout;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -13,13 +13,13 @@ import org.springframework.stereotype.Component;
  * @date: 2019/1/16 11:00
  */
 @Component
-@RabbitListener(queues = "message.rabbit.queue.name")
-public class WorkConsumer {
-    private final static Logger LOGGER = LoggerFactory.getLogger(WorkConsumer.class);
+@RabbitListener(queues = "message.rabbit.queue.fanout.b")
+public class FanoutQueueB {
+    private final static Logger LOGGER = LoggerFactory.getLogger(FanoutQueueB.class);
 
     @RabbitHandler
     public void handler(String content) {
-        LOGGER.info("Work消费者消费读取Queue内容：{}", content);
+        LOGGER.info("FanoutQueueB消费者消费读取Queue内容：{}", content);
     }
 }
 
