@@ -23,8 +23,11 @@ MessageQueue父模块
 暂无专门测试模块
 
 
-1. RabbitMQ
-  
+1. rabbitmq-consumer
+    用于获取队列中的数据，NormalConsumer用于rabbitmq-normal模块
+2. rabbitmq-normal
+    普通模式，普通的发送与接收
+3.  
 
 
 #### 参与贡献
