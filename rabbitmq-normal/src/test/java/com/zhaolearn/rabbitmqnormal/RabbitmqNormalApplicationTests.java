@@ -2,6 +2,7 @@ package com.zhaolearn.rabbitmqnormal;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -9,8 +10,13 @@ import org.springframework.test.context.junit4.SpringRunner;
 @SpringBootTest
 public class RabbitmqNormalApplicationTests {
 
+    @Autowired
+    private MessageProvider messageProvider;
     @Test
-    public void contextLoads() {
+    public void testStringSend() {
+        for (int i = 1; i < 10; i++) {
+            messageProvider.send(i+"");
+        }
     }
 
 }
