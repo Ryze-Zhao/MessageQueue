@@ -13,5 +13,6 @@
         <module>rabbitmq-consumer</module>
         <module>rabbitmq-normal</module>
         <module>rabbitmq-fanout</module>
+        <module>rabbitmq-direct</module>
     </modules>
 </project>
