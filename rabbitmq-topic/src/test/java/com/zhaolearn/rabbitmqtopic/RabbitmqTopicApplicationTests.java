@@ -16,6 +16,7 @@ public class RabbitmqTopicApplicationTests {
             messageProvider.send(QueueEnum.MESSAGE_EXCHANGE_TOPIC.getExchange(),"message.rabbit.queue.topic.msg","1");
             messageProvider.send(QueueEnum.MESSAGE_EXCHANGE_TOPIC.getExchange(),"message.rabbit.queue.topic.good","1");
             messageProvider.send(QueueEnum.MESSAGE_EXCHANGE_TOPIC.getExchange(),"message.rabbit.queue.topic.asdsam.sdsadsa.asdas","1");
+            messageProvider.send(QueueEnum.MESSAGE_EXCHANGE_TOPIC.getExchange(),"nokey","1");
     }
 }
 
