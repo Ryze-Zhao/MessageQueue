@@ -27,8 +27,10 @@ MessageQueue父模块
      NormalConsumer、WorkConsumer用于rabbitmq-normal模块，工作模式
 2. rabbitmq-normal
     普通模式与工作模式共用，普通的发送与接收
-3.  
-
+3. rabbitmq-fanout
+    订阅模式/发布模式/，所有绑定到对应Exchange的Queue都会收到所有消息，所有绑定这些Queue的消费者，都会收到所有信息
+4. rabbitmq-direct
+                    ，绑定到Exchange的Queue有对应的Key，如果消息不能完全匹配上对应的Queue和Key，Queue就不会接收该消息，订阅这个Queue的消费者就更加不可能接收到该消息，因为该消费已被废弃。
 
 #### 参与贡献
 
