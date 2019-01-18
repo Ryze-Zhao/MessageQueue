@@ -14,5 +14,6 @@
         <module>rabbitmq-normal</module>
         <module>rabbitmq-fanout</module>
         <module>rabbitmq-direct</module>
+        <module>rabbitmq-topic</module>
     </modules>
 </project>
