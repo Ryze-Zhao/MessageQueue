@@ -13,11 +13,9 @@ public class RabbitmqTopicApplicationTests {
     private MessageProvider messageProvider;
     @Test
     public void testStringSend() {
-        for (int i = 1; i <=1; i++) {
-            messageProvider.send(QueueEnum.MESSAGE_EXCHANGE_TOPIC.getExchange(),"message.rabbit.queue.topic.msg",i+"");
-            messageProvider.send(QueueEnum.MESSAGE_EXCHANGE_TOPIC.getExchange(),"message.rabbit.queue.topic.good",i+"");
-            messageProvider.send(QueueEnum.MESSAGE_EXCHANGE_TOPIC.getExchange(),"message.rabbit.queue.topic.asdsam.sdsadsa.asdas",i+"");
-        }
+            messageProvider.send(QueueEnum.MESSAGE_EXCHANGE_TOPIC.getExchange(),"message.rabbit.queue.topic.msg","1");
+            messageProvider.send(QueueEnum.MESSAGE_EXCHANGE_TOPIC.getExchange(),"message.rabbit.queue.topic.good","1");
+            messageProvider.send(QueueEnum.MESSAGE_EXCHANGE_TOPIC.getExchange(),"message.rabbit.queue.topic.asdsam.sdsadsa.asdas","1");
     }
 }
 
