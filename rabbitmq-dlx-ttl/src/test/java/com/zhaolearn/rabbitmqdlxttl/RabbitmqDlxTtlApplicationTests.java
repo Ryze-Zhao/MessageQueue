@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 @RunWith(SpringRunner.class)
@@ -16,11 +17,12 @@ public class RabbitmqDlxTtlApplicationTests {
     private MessageProvider messageProvider;
     @Test
     public void testLazy() {
+        String dateString = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
         // 测试延迟10000毫秒
-        messageProvider.send("测试延迟消费,写入时间：" + new Date(),
-                QueueEnum.MESSAGE_TTL_QUEUE.getExchange(),
+        messageProvider.send(   QueueEnum.MESSAGE_TTL_QUEUE.getExchange(),
                 QueueEnum.MESSAGE_TTL_QUEUE.getRouteKey(),
-                10000);
+                "测试延迟消费,写入时间：" + dateString,
+                1000);
     }
 }
 
