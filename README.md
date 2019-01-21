@@ -43,8 +43,8 @@ MessageQueue父模块
 7. activemq-consumer        (MessageQueue:ActiveMQ)
     ActiveMQ消费者模块，用于获取队列中的数据
     
-    
-    
+8. activermq-normal         (MessageQueue:ActiveMQ)    
+    普通模式，即点对点的进行发送，生产者发送到Queue，消费者到Queue中获取；
     
     
     
