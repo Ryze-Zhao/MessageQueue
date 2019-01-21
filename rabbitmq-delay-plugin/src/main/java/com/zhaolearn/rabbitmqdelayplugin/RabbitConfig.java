@@ -15,7 +15,8 @@ public class RabbitConfig {
         // 定义一个名为MESSAGE_EXCHANGE_FANOUT.getExchange()的direct交换器
         Map<String, Object> args = new HashMap<>();
         args.put("x-delayed-type", "direct");
-        return new CustomExchange(QueueEnum.MESSAGE_EXCHANGE_DELAY_PLUGIN.getExchange(),"x-delayed-message", true, false, args);
+        return new CustomExchange(QueueEnum.MESSAGE_EXCHANGE_DELAY_PLUGIN.getExchange(),
+                "x-delayed-message", true, false, args);
     }
     //定义多个Queue
     @Bean
@@ -26,6 +27,7 @@ public class RabbitConfig {
     //将Queue绑定到Exchange
     @Bean
     public Binding delayPluginBinding() {
-        return BindingBuilder.bind(delayPluginQueue()).to(delayPluginExchange()).with(QueueEnum.MESSAGE_EXCHANGE_DELAY_PLUGIN.getRouteKey()).noargs();
+        return BindingBuilder.bind(delayPluginQueue()).to(delayPluginExchange()).
+                with(QueueEnum.MESSAGE_EXCHANGE_DELAY_PLUGIN.getRouteKey()).noargs();
     }
 }
