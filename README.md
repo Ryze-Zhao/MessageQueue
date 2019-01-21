@@ -21,17 +21,17 @@ MessageQueue父模块
 暂无专门测试模块
 
 
-1. rabbitmq-consumer    (MessageQueue:RabbitMQ)
+1. rabbitmq-consumer        (MessageQueue:RabbitMQ)
     RabbitMQ消费者模块，用于获取队列中的数据,不同的目录对应不同模块的消费者
 
      
-2. rabbitmq-normal       (MessageQueue:RabbitMQ)
+2. rabbitmq-normal          (MessageQueue:RabbitMQ)
     普通模式与工作模式共用，普通的发送与接收；
     
-3. rabbitmq-fanout       (MessageQueue:RabbitMQ)
+3. rabbitmq-fanout          (MessageQueue:RabbitMQ)
     订阅模式/发布模式/，所有绑定到对应Exchange的Queue都会收到所有消息，所有绑定这些Queue的消费者，都会收到所有信息；
     
-4. rabbitmq-direct       (MessageQueue:RabbitMQ)
+4. rabbitmq-direct          (MessageQueue:RabbitMQ)
     直接交换模式，绑定到Exchange的Queue有对应的Key，如果消息不能完全匹配上对应的Queue和Key，Queue就不会接收该消息，订阅这个Queue的消费者就更加不可能接收到该消息，因为该消费已被废弃；
     
 5. rabbitmq-dlx-ttl         (MessageQueue:RabbitMQ)
