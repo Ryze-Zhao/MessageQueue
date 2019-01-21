@@ -15,5 +15,6 @@
         <module>rabbitmq-direct</module>
         <module>rabbitmq-topic</module>
         <module>rabbitmq-dlx-ttl</module>
+        <module>rabbitmq-delay-plugin</module>
     </modules>
 </project>
