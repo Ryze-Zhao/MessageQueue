@@ -17,5 +17,6 @@
         <module>rabbitmq-dlx-ttl</module>
         <module>rabbitmq-delay-plugin</module>
         <module>activemq-consumer</module>
+        <module>activemq-normal</module>
     </modules>
 </project>
