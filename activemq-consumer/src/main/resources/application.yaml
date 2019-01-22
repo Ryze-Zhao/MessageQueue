@@ -10,5 +10,6 @@ spring:
     packages:
       trust-all: true
     in-memory: false
+    #以下这句话，只在测试Topic才加，否则去除
   jms:
     pub-sub-domain: true
