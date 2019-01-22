@@ -12,7 +12,6 @@ import java.util.Date;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class ActivemqTopicApplicationTests {
-
     @Autowired
     private MessageProvider messageProvider;
     @Test
@@ -22,6 +21,5 @@ public class ActivemqTopicApplicationTests {
             messageProvider.send(QueueEnum.MESSAGE_TOPIC_ENUM.getExchange(), "测试消费,写入时间：" + dateString);
         }
     }
-
 }
 

@@ -10,3 +10,5 @@ spring:
     packages:
       trust-all: true
     in-memory: false
+  jms:
+    pub-sub-domain: true
