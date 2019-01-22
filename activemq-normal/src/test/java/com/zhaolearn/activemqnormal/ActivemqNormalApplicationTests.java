@@ -17,7 +17,14 @@ public class ActivemqNormalApplicationTests {
     @Test
     public void test() {
         String dateString = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
-        messageProvider.send(QueueEnum.MESSAGE_Queue_NORMAL.getQueueName(), "测试延迟消费,写入时间：" + dateString);
+        messageProvider.send(QueueEnum.MESSAGE_Queue_NORMAL.getQueueName(), "测试消费,写入时间：" + dateString);
+    }
+    @Test
+    public void test1() {
+      for(int i=0;i<5;i++){
+          String dateString = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
+          messageProvider.send(QueueEnum.MESSAGE_Queue_NORMAL.getQueueName(), "测试消费,写入时间：" + dateString);
+      }
     }
 }
 

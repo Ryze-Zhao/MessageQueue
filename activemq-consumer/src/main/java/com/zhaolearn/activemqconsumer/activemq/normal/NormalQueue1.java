@@ -6,10 +6,10 @@ import org.springframework.jms.annotation.JmsListener;
 import org.springframework.stereotype.Service;
 
 @Service
-public class NormalQueue {
-    private final static Logger LOGGER = LoggerFactory.getLogger(NormalQueue.class);
+public class NormalQueue1 {
+    private final static Logger LOGGER = LoggerFactory.getLogger(NormalQueue1.class);
     @JmsListener(destination = "message.queue.name")
     public void receiveQueue(String msg) {
-        LOGGER.info("NormalQueue获取消息："+msg);
+        LOGGER.info("NormalQueue1获取消息："+msg);
     }
 }
