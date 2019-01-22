@@ -46,8 +46,8 @@ MessageQueue父模块
 8. activermq-normal         (MessageQueue:ActiveMQ)    
     普通模式，即点对点的进行发送，生产者发送到Queue，消费者到Queue中获取；
     
-    
-    
+9.  activemq-topic          (MessageQueue:ActiveMQ)   
+    订阅模式，跟广播很像；
     
     
 #### 参与贡献

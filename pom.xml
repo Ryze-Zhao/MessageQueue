@@ -18,5 +18,6 @@
         <module>rabbitmq-delay-plugin</module>
         <module>activemq-consumer</module>
         <module>activemq-normal</module>
+        <module>activemq-topic</module>
     </modules>
 </project>
