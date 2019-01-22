@@ -12,15 +12,12 @@ import java.util.Date;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class ActivemqNormalApplicationTests {
-
     @Autowired
     private MessageProvider messageProvider;
-
     @Test
-    public void testLazy() {
+    public void test() {
         String dateString = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date());
         messageProvider.send(QueueEnum.MESSAGE_Queue_NORMAL.getQueueName(), "测试延迟消费,写入时间：" + dateString);
     }
-
 }
 

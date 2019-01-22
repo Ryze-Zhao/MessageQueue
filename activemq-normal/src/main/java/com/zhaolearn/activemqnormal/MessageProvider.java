@@ -12,7 +12,7 @@ public class MessageProvider {
     @Autowired
     private JmsMessagingTemplate jmsMessagingTemplate;
     public void send(String destName, Object message){
-        System.out.println("发布消息：" + message);
-        jmsMessagingTemplate.convertAndSend(destName, message);
+        LOGGER.info("发布消息：" + message);
+        this.jmsMessagingTemplate.convertAndSend(destName, message);
     }
 }

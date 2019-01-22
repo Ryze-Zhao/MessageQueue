@@ -6,7 +6,7 @@ package com.zhaolearn.activemqnormal;
  * @date: 2019/1/17 17:30
  */
 public enum QueueEnum {
-    //定义Exchange
+    //定义Queue
     MESSAGE_Queue_NORMAL("message.queue.name","","");
 
 
