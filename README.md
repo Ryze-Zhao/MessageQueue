@@ -56,7 +56,7 @@ MessageQueue父模块
     activemq-coexist、activemq-delay 的消费者模块，收Queue和Topic共存；
     
 12. activemq-delay            (MessageQueue:ActiveMQ)  
-    演示Queue和Topic的延期；
+    演示Queue和Topic的延期，可以延期一定时间，或者定期发送；
 
     
 #### 参与贡献
