@@ -7,6 +7,14 @@ import org.springframework.util.StringUtils;
 import javax.jms.JMSException;
 import javax.jms.Message;
 
+
+/**
+ * 使用long代表延时多久；
+ * 使用corn代表定时，格式为 分 时 日 月 年，不填就用*，如果在每天15：50分发送；50 15 * * *
+ *
+ * @author: HeHaoZhao
+ * @date: 2019/1/25 17:43
+ */
 public class ScheduleMessagePostProcessor implements MessagePostProcessor {
     private long delay = 0L;
     private String corn = null;
