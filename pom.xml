@@ -20,5 +20,6 @@
         <module>activemq-normal</module>
         <module>activemq-topic</module>
         <module>activemq-coexist</module>
+        <module>activemq-coexist-consumer</module>
     </modules>
 </project>
