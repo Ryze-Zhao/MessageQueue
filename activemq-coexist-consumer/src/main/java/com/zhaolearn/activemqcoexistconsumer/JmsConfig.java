@@ -12,13 +12,11 @@ import javax.jms.ConnectionFactory;
 @Configuration
 @EnableJms
 public class JmsConfig {
-
     @Bean
     public JmsListenerContainerFactory<?> jmsListenerContainerTopic(ConnectionFactory connectionFactory) {
         DefaultJmsListenerContainerFactory bean = new DefaultJmsListenerContainerFactory();
         bean.setPubSubDomain(true);
         bean.setConnectionFactory(connectionFactory);
-
         return bean;
     }
     @Bean
@@ -27,9 +25,4 @@ public class JmsConfig {
         bean.setConnectionFactory(connectionFactory);
         return bean;
     }
-    @Bean
-    public JmsMessagingTemplate jmsMessagingTemplate(ConnectionFactory connectionFactory){
-        return new JmsMessagingTemplate(connectionFactory);
-    }
-
 }
