@@ -41,14 +41,21 @@ MessageQueue父模块
     延迟模式之插件，使用插件需要RabbitMQ版本在3.5.8+，设置延期的Exchange，时间到期再推送到指定的Queue，无法匹配的Queue将被废弃；
     
 7. activemq-consumer        (MessageQueue:ActiveMQ)
-    ActiveMQ消费者模块，用于获取队列中的数据
+    ActiveMQ消费者模块，用于获取队列中的数据；
     
 8. activermq-normal         (MessageQueue:ActiveMQ)    
-    普通模式，即点对点的进行发送，生产者发送到Queue，消费者到Queue中获取；
+    普通模式(Queue)，即点对点的进行发送，生产者发送到Queue，消费者到Queue中获取；发一次，所有收的消费者只能收到一次消息；
     
 9.  activemq-topic          (MessageQueue:ActiveMQ)   
-    订阅模式，跟广播很像；
+    订阅模式(Topic)，跟广播很像，发一次，所有订阅的消费者都会收到一次消息；
+ 
+10. activemq-coexist         (MessageQueue:ActiveMQ)   
+    发Queue和Topic共存，上面因为接收时使用了Spring：jms：pub-sub-domain: true，导致无法接收Queue，不用又无法接收Queue，现在解决这个问题；
     
+11. activemq-coexist-consumer (MessageQueue:ActiveMQ)  
+    activemq-coexist的消费者模块；
+
+
     
 #### 参与贡献
 
