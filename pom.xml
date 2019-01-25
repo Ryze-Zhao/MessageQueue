@@ -21,5 +21,6 @@
         <module>activemq-topic</module>
         <module>activemq-coexist</module>
         <module>activemq-coexist-consumer</module>
+        <module>activemq-delay</module>
     </modules>
 </project>

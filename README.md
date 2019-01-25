@@ -53,8 +53,10 @@ MessageQueue父模块
     发Queue和Topic共存，上面因为接收时使用了Spring：jms：pub-sub-domain: true，导致无法接收Queue，不用又无法接收Queue，现在解决这个问题；
     
 11. activemq-coexist-consumer (MessageQueue:ActiveMQ)  
-    activemq-coexist的消费者模块；
-
+    activemq-coexist、activemq-delay 的消费者模块，收Queue和Topic共存；
+    
+12. activemq-delay            (MessageQueue:ActiveMQ)  
+    演示Queue和Topic的延期；
 
     
 #### 参与贡献
