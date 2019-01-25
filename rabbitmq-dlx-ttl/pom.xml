@@ -12,7 +12,7 @@
     <artifactId>rabbitmq-dlx-ttl</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>rabbitmq-dlx-ttl</name>
-    <description>Demo project for Spring Boot</description>
+    <description>rabbitmq-dlx-ttl</description>
 
     <properties>
         <java.version>1.8</java.version>
