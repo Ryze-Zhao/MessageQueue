@@ -11,8 +11,8 @@ public class QueueProvider {
     private final static Logger LOGGER = LoggerFactory.getLogger(QueueProvider.class);
     @Autowired
     private JmsMessagingTemplate jmsMessagingTemplate;
-    public void delaySend(String destName, int time, Object message) {
-        jmsMessagingTemplate.getJmsTemplate().convertAndSend(destName, message, new ScheduleMessagePostProcessor(time));
+    public void delaySend(String destName, ScheduleMessage time, Object message) {
+        jmsMessagingTemplate.getJmsTemplate().convertAndSend(destName, message, time);
         LOGGER.info("发送" + message);
     }
 }
