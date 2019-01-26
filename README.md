@@ -1,6 +1,6 @@
 # 各类消息队列结合SpringBoot学习
 1.  RabbitMQ
-
+2.  ActiveMQ
 
 
 #### 项目介绍
