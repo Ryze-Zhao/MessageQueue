@@ -58,6 +58,14 @@ MessageQueue父模块
 12. activemq-delay            (MessageQueue:ActiveMQ)  
     演示Queue和Topic的延时，可以普通延时，定时发送，不延时重复N次发送，延时重复N次发送；
 
+13. kafka-consumer            (MessageQueue:Kafka)  
+    Kafka消费者模块
+  
+    
+    
+    
+    
+    
     
 #### 参与贡献
 
