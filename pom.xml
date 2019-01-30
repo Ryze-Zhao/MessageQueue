@@ -23,5 +23,6 @@
         <module>activemq-coexist-consumer</module>
         <module>activemq-delay</module>
         <module>kafka-consumer</module>
+        <module>kafka-normal</module>
     </modules>
 </project>
