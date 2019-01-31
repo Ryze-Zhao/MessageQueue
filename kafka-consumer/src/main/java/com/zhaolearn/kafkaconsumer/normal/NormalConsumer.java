@@ -7,11 +7,11 @@ import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
 
 @Component
-public class NormalComsumer {
-    private final static Logger LOGGER = LoggerFactory.getLogger(NormalComsumer.class);
+public class NormalConsumer {
+    private final static Logger LOGGER = LoggerFactory.getLogger(NormalConsumer.class);
     @KafkaListener(topics = {"normal_consumer_group_topic"}, groupId = "normal_consumer_group_id")
     public void listen(ConsumerRecord<?, ?> record) {
-        LOGGER.info("NormalComsumer所有信息："+record.toString());
+        LOGGER.info("NormalConsumer所有信息："+record.toString());
 //        LOGGER.info("【消费{}主题, 第{}分区, 数据:{}, 偏移量:{}】", record.topic(), record.partition(), record.value(), record.offset());
     }
 }
