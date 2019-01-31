@@ -59,7 +59,7 @@ MessageQueue父模块
     演示Queue和Topic的延时，可以普通延时，定时发送，不延时重复N次发送，延时重复N次发送；
 
 13. kafka-consumer            (MessageQueue:Kafka)  
-    Kafka消费者模块；
+    Kafka消费者模块；1、单收单发单分区需要关闭NormalConsumer2;
   
 14. kafka-normal              (MessageQueue:Kafka)      
     Kafka普通模块，正常收发，单Product，Consumer，单Topic，且Topic单分区；
