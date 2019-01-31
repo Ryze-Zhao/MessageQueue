@@ -1,7 +1,7 @@
 # 各类消息队列结合SpringBoot学习
 1.  RabbitMQ
 2.  ActiveMQ
-
+3.  Kafka
 
 #### 项目介绍
 主要是学习 消息队列
@@ -63,7 +63,7 @@ MessageQueue父模块
   
 14. kafka-normal              (MessageQueue:Kafka)      
     Kafka普通模块，正常收发，单Product，Consumer，单Topic，且Topic单分区；
-    
+        
     
     
     
@@ -72,4 +72,4 @@ MessageQueue父模块
 1. RyzeZhao
 
 #### MessageQueue消息队列博客汇总
-http://heaven.hehaozhao.xin/front/articlePage/ubb40p25om
+http://www.hehaozhao.top/front/articlePage/ubb40p25om
