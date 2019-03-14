@@ -72,4 +72,4 @@ MessageQueue父模块
 1. RyzeZhao
 
 #### MessageQueue消息队列博客汇总
-http://www.hehaozhao.top/front/articlePage/ubb40p25om
+https://www.hehaozhao.top/front/articlePage/ubb40p25om
